@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+## react-poke-mini-project (template for react test)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thanks for your time! We’d like to provide you an opportunity to show off your React/Vue skills!
 
-## Available Scripts
+We’d like your work to be captured in a git repository.
+The designs will be provided in Figma, so try to follow the style as closely as possible.
+Before you start, send your github username or github email to brightdolphinsHR@gmail.com so we can give you access to the repository
 
-In the project directory, you can run:
+Here are the details for the Mini React Project:
 
-### `yarn start`
+- Request data from this site: https://pokeapi.co/
+- Create the frontend based on this Figma design: https://www.figma.com/file/0kgXM1XwWwPfbh7oYoNaGr/BD---%5BDEV%5D-Mini-Project-Template?node-id=2005%3A57773
+- Make sure the follow the Figma design as closely as possible
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Requirements:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Project must be written with react or vue
+- Project should be completed within 4 hours
+- Project must be pushed to this github repo: git@github.com:brightdolphins/react-poke-mini-project.git
 
-### `yarn test`
+Steps to creating the deliverables:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Create a new branch off of master/main
+- Push all your work to that branch
+- When you are done make a pull request (pr) against master/main
 
-### `yarn build`
+Deliverable:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Make sure all your code is pushed to github before the deadline
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you have any questions feel free to send an email to: brightdolphinsHR@gmail.com
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Definitely let us know if you have any questions! This is your time to shine!
