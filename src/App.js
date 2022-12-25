@@ -3,8 +3,12 @@ import { useEffect, useState } from "react";
 function App() {
   const [data, setData] = useState(null);
 
-  const fetchData = async (limit = 20, offset = 0) => {
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`);
+  const fetchData = async (url) => {
+    if (!url) {
+      url = `https://pokeapi.co/api/v2/pokemon?limit=12&offset=0`;
+    }
+
+    const res = await fetch(url);
 
     if (!res.ok) {
       throw new Error("Data could not be fetched!");
@@ -13,10 +17,16 @@ function App() {
     return res.json();
   };
 
-  useEffect(() => {
-    fetchData()
-      .then((res) => setData(res))
+  const getPokemons = (url = '') => {
+    fetchData(url)
+      .then((res) => {
+        setData(res);
+      })
       .catch((e) => console.log(e.message));
+  };
+
+  useEffect(() => {
+    getPokemons();
   }, []);
 
   const renderData = () => {
@@ -27,13 +37,12 @@ function App() {
     const list = [];
 
     data?.results.forEach((item) => {
-      console.log(item);
       const url = item.url.split("/");
       const id = url.splice(-2)[0];
       const img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
 
       list.push(
-        <div className="flex items-center gap-4 bg-white rounded-[12px] p-4">
+        <div key={id} className="flex items-center gap-4 bg-white rounded-[12px] p-4">
           <div className="h-[72px] w-[72px] rounded-full bg-neutral-dark bg-opacity-10">
             <img src={img} alt={item.name} className="object-cover object-center" />
           </div>
@@ -61,6 +70,15 @@ function App() {
       </div>
 
       {renderData()}
+
+      <div className="flex justify-between items-center pt-4">
+        <button onClick={() => getPokemons(data?.previous)} disabled={!data?.previous} className="bg-white border border-secondary rounded-[12px] w-[120px] p-4 disabled:bg-slate-200">
+          Previous 12
+        </button>
+        <button onClick={() => getPokemons(data?.next)} disabled={!data?.next} className="bg-white border border-secondary rounded-[12px] w-[120px] p-4">
+          Next 12
+        </button>
+      </div>
     </div>
   );
 }
