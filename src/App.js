@@ -28,9 +28,15 @@ function App() {
 
     data?.results.forEach((item) => {
       console.log(item);
+      const url = item.url.split("/");
+      const id = url.splice(-2)[0];
+      const img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
+
       list.push(
         <div className="flex items-center gap-4 bg-white rounded-[12px] p-4">
-          <div className="h-[72px] w-[72px] rounded-full bg-neutral-dark bg-opacity-10"></div>
+          <div className="h-[72px] w-[72px] rounded-full bg-neutral-dark bg-opacity-10">
+            <img src={img} alt={item.name} className="object-cover object-center" />
+          </div>
           <div className="font-title font-medium text-[20px] tracking-wide capitalize">{item.name}</div>
         </div>
       );
